@@ -32,7 +32,7 @@ CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `price` float DEFAULT NULL,
-  `rating` varchar(255) DEFAULT NULL
+  `rating` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
