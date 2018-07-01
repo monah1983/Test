@@ -107,3 +107,16 @@ $("body").on("click",".crud-submit-edit",function(e){
         toastr.success('Товар успешно обновлен.', 'Уведомление', {timeOut: 5000});
     });
 });
+
+$(document).ajaxStart(function(){
+    toastr.success('Начало выполнение запроса.', 'Уведомление', {timeOut: 5000});
+});
+
+$(document).ajaxStop (function(){
+    toastr.success('Конец выполнения запроса.', 'Уведомление', {timeOut: 5000});
+});
+
+$(document).ajaxError(function(){
+    toastr.success('An error occurred:' + status + 'nError: ' + error, {timeOut: 5000});
+});
+
